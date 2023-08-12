@@ -1,0 +1,115 @@
+#trust {
+    margin-bottom: 130px;
+
+    h2 {
+        color: var(--main-font, #363738);
+        font-family: Exo 2;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%;
+        margin-bottom: 90px;
+    }
+
+    .trust_wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 80px;
+
+        .truet_card:nth-child(1),
+        .truet_card:nth-child(3),
+        .truet_card:nth-child(4),
+        .truet_card:nth-child(6),
+        .truet_card:nth-child(7) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h5 {
+                color: var(--main-font, #363738);
+                text-align: center;
+                font-family: Exo 2;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 135%;
+                margin: 32px 0 14px 0;
+            }
+
+            p {
+                color: var(--additional-font, #6B6B6C);
+                text-align: center;
+                font-family: PT Sans;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+            }
+        }
+
+        .truet_card:nth-child(2),
+        .truet_card:nth-child(5),
+        .truet_card:nth-child(8) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h5 {
+                color: var(--main-font, #363738);
+                text-align: center;
+                font-family: Exo 2;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 135%;
+                margin: 56px 0 14px 0;
+            }
+
+            p {
+                color: var(--additional-font, #6B6B6C);
+                text-align: center;
+                font-family: PT Sans;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+            }
+        }
+
+        .truet_card:nth-child(1),
+        .truet_card:nth-child(2),
+        .truet_card:nth-child(3) {
+            border-right: 1px solid #D7D7DD;
+        }
+
+        .truet_card:nth-child(5),
+        .truet_card:nth-child(6),
+        .truet_card:nth-child(7) {
+            border-right: 1px solid #D7D7DD;
+        }
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .trust_wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        row-gap: 80px;
+
+        .truet_card:nth-child(1),
+        .truet_card:nth-child(2),
+        .truet_card:nth-child(3) {
+            border-right: none !important;
+        }
+
+        .truet_card:nth-child(5),
+        .truet_card:nth-child(6),
+        .truet_card:nth-child(7) {
+            border-right: none !important;
+        }
+
+        .truet_card:nth-child(1), .truet_card:nth-child(3), .truet_card:nth-child(5), .truet_card:nth-child(7){
+            border-right: 1px solid #D7D7DD !important;
+        }
+    }
+}

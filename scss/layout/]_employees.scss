@@ -1,0 +1,186 @@
+#employees {
+    margin-bottom: 130px;
+
+    h2 {
+        color: var(--main-font, #363738);
+        font-family: Exo 2;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%;
+        margin-bottom: 72px;
+    }
+
+    .employees_wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        gap: 24px;
+
+        .employees_card {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 32px;
+            border-radius: 10px;
+            background: var(--white, #FFF);
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            border-left: 50px solid #0B7572;
+
+            h6 {
+                color: var(--main-font, #363738);
+                font-family: Exo 2;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            p {
+                color: var(--additional-font, #6B6B6C);
+                font-family: PT Sans;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                margin: 12px 0 50px 0;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 86px;
+                    height: 3px;
+                    background: #FFCE50;
+                    bottom: -16px;
+                }
+            }
+
+            .social {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .employees_wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        gap: 24px;
+
+        .employees_card {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 40px;
+            padding: 32px;
+            border-radius: 10px;
+            background: var(--white, #FFF);
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            border-left: 50px solid #0B7572;
+
+            h6 {
+                color: var(--main-font, #363738);
+                font-family: Exo 2;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            p {
+                color: var(--additional-font, #6B6B6C);
+                font-family: PT Sans;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                margin: 12px 0 50px 0;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 86px;
+                    height: 3px;
+                    background: #FFCE50;
+                    bottom: -16px;
+                }
+            }
+
+            .social {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .employees_wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+        justify-content: space-between;
+        gap: 24px;
+
+        .employees_card {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            gap: 16px;
+            padding: 32px;
+            border-radius: 10px;
+            background: var(--white, #FFF);
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            border-left: 20px solid #0B7572 !important;
+
+            .user_img {
+                width: 100px !important;
+                height: 100px !important;
+            }
+
+            h6 {
+                color: var(--main-font, #363738);
+                font-family: Exo 2;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            p {
+                color: var(--additional-font, #6B6B6C);
+                font-family: PT Sans;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                margin: 12px 0 50px 0;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 86px;
+                    height: 3px;
+                    background: #FFCE50;
+                    bottom: -16px;
+                }
+            }
+
+            .social {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+    }
+}

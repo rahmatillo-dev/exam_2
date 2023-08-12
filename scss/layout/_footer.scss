@@ -1,0 +1,114 @@
+footer {
+  width: 100%;
+  padding: 60px 0 30px 0;
+  background: #0B7572;
+  height: auto;
+
+  .footer_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 70px;
+    margin-bottom: 80px;
+
+    .footer_logo {
+      text-decoration: none;
+      color: #FFF;
+      text-align: center;
+      font-family: Exo 2;
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%;
+      letter-spacing: 2.08px;
+      text-transform: capitalize;
+    }
+
+    .links {
+      display: flex;
+      gap: 120px;
+    }
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      a {
+        color: #FFF;
+        font-family: Exo 2;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: 2.08px;
+        text-transform: capitalize;
+        text-decoration: none;
+      }
+    }
+
+    .f_social {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .phone_number {
+      color: #FFF;
+      font-family: Exo 2;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%;
+      text-transform: uppercase;
+    }
+
+    button {
+      width: 270px;
+      height: 40px;
+      background: #FF9619;
+      border: none;
+      color: #FFF;
+      font-family: Open Sans;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+
+  p {
+    color: #FFF;
+    text-align: center;
+    font-family: Exo 2;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 1.92px;
+    text-transform: capitalize;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .footer_wrapper {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    gap: 40px;
+    align-items: start;
+    margin-right: 70px;
+    margin-bottom: 80px;
+
+    .links {
+      display: flex;
+      justify-content: space-between !important;
+      gap: 40px !important;
+    }
+  }
+}
